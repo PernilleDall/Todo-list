@@ -1,11 +1,16 @@
 import Button from "./components/button.mjs"
+import inputItem from "./components/input.mjs";
 
 function render () {
     const root = document.querySelector("#root");
-    const button = Button ("Click me", () => {
+    const btn = Button ("Click me", () => {
         console.log("trykket på knappen");
     });
-    root.appendChild(button);
+    const input = inputItem ("task");
+
+    root.appendChild(btn);
+    root.appendChild(input);
+    
     
 }
 render ();
