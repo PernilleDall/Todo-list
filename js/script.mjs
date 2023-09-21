@@ -1,3 +1,4 @@
+/*
 import Button from "./components/button.mjs"
 import inputItem from "./components/input.mjs";
 
@@ -14,3 +15,9 @@ function render () {
     
 }
 render ();
+*/
+import List from "./components/list.mjs";
+const root = document.querySelector('#root');
+root.appendChild(List());
+
+console.log("noe");
